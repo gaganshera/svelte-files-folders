@@ -2,7 +2,7 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
-  import FilesFolders from './lib/FilesFolders.svelte';
+  import SelectionForm from './lib/SelectionForm.svelte';
 </script>
 
 <main>
@@ -18,6 +18,10 @@
 
   <div class="card">
     <Counter />
+  </div>
+
+  <div class="card">
+    <SelectionForm />
   </div>
 
   <p>
