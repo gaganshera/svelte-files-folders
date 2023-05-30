@@ -1,4 +1,5 @@
 <svelte:options tag="my-selection-form" />
+
 <script lang="ts">
   import FolderListing from "./FolderListing.svelte";
 
@@ -75,12 +76,9 @@
       }
     }
   }
-  function handleCancelClick() {}
 
   $: {
-    if (folders_or_files) {
-      handleSelectChange(folders_or_files);
-    }
+    handleSelectChange(folders_or_files);
   }
   $: {
     console.log(directory, allFilesNames, allFoldersNames);
@@ -107,7 +105,7 @@
     Save
   </button>
 
-  <button on:click|preventDefault={handleCancelClick}> Cancel </button>
+  <input type="reset" value="Cancel" />
 </form>
 
 <FolderListing {directory} />
