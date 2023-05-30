@@ -1,3 +1,4 @@
+<svelte:options tag="my-selection-form" />
 <script lang="ts">
   import FolderListing from "./FolderListing.svelte";
 

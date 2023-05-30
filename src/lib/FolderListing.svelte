@@ -1,9 +1,10 @@
+<svelte:options tag="my-folder-listing" />
 <script lang="ts">
   import File from "./File.svelte";
   export let directory = [];
 </script>
 
-<ul>
+<ul style="text-align: left;">
   {#each directory as file_or_folder}
     <li>
       {#if file_or_folder.children}
@@ -18,6 +19,6 @@
 
 <style>
 	ul {
-    text-align: left;
+    text-align: right;
   }
 </style>
